@@ -1,60 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <title>E-Learning</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Management</title>
+    <!-- bootdtrap cdn code -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- style file -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- fontawesome code -->
+    <script src="https://kit.fontawesome.com/25704ca0de.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header class="container">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-        <img src="logo-removebg-preview (3).png" alt="">
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#shoes">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bagpack">Deals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bagpack">Success</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bagpack">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Catagories
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Item-1</a></li>
-                <li><a class="dropdown-item" href="#">Item-2</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Item-2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#subscribe">Subscribe</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+
+
+    <!-- navbar start -->
+    <header class="bg-light container">
+        <nav class="navbar navbar-expand-lg  container ">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a class="navbar-brand text-light" href="index.html"><img class="img-fluid " src="logo.png"
+                            alt=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto fs-5">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#courses">Course</a>
+                        </li>
+                        <a class="nav-link mx-3" href="#deals">Deals</a>
+                        </li>
+                        <a class="nav-link mx-3" href="#success">Success</a>
+                        </li>
+                        <a class="nav-link mx-3" href="#about">About</a>
+                        </li>
+                        <a class="nav-link mx-3" href="#register">Register</a>
+                        </li>
+
+
+                    </ul>
+
+                    <!-- modal -->
+
+
+                    <div class="register">
+                        <button type="button" class="btn btn-outline-primary font-we fw-semibold fs-5 px-5 py-2"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Register
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputName" class="form-label">Type Your Full
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleInputName"
+                                                    aria-describedby="emailHelp">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with
+                                                    anyone else.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Agree with Our
+                                                    Tearms</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <!-- carousel start -->
+       <section class="container ">
+        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="images/cover/slide-3.jpg" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="mb-3">Get Started Digital
+                            Learning</h1>
+                        <p class="mb-4">It is a long established fact that a reader will be distracted by the
+                            readable
+                            content of a page when looking at its layout.</p>
+                        <div class="slider-bitton">
+                            <button class="btn btn-primary px-4 py-2 fs-5 fw-semibold">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active ">
+                    <img src="images/cover/slide-2.jpg" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="mb-3">Get Started Digital
+                            Learning</h1>
+                        <p class="mb-4">It is a long established fact that a reader will be distracted by the
+                            readable
+                            content of a page when looking at its layout.</p>
+                        <div class="slider-bitton">
+                            <button class="btn btn-primary px-4 py-2 fs-5 fw-semibold">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active ">
+                    <img src="images/cover/slide-1.png" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="mb-3">Get Started Digital
+                            Learning</h1>
+                        <p class="mb-4">It is a long established fact that a reader will be distracted by the
+                            readable
+                            content of a page when looking at its layout.</p>
+                        <div class="slider-bitton">
+                            <button class="btn btn-primary px-4 py-2 fs-5 fw-semibold">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </section>
+    <!-- carousel end -->
+
+
+     <!-- Popular Courses -->
+     <section class="container mt-5" id="courses">
+      <div class="d-flex flex-column align-items-center custom-popular-course-title">
+          <h2 class="text-dark fw-bold fs-1 w-50 text-center">Discover Our Popular Courses</h2>
+          <p class="text-dark fw-light fs-5 w-50 text-center">Checkout our varius edTech Courses from our website. Now you can learn form online totaly at low cost.</p>
       </div>
-    </nav>
-</body>
-</html>
+      <div>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="border rounded-3 overflow-hidden">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                          <img class="img-fluid w-100" src="images/course/course-1.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 p-0 pe-4 ps-2 d-flex flex-column justify-content-center custom-card-info-01">
+                          <h2 class="text-dark fw-semibold fs-3">Fundamental Of UI/UX Design</h2>
+                          <p class="text-dark fw-light fs-5">Learn awesome UI/UX Design at low cost, you can't never imagine how cool it is.</p>
+                          <span class="text-primary fs-4 fw-bold">Price : 99.99$</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="border rounded-3 overflow-hidden">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                          <img class="img-fluid w-100" src="images/course/course-2.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 p-0 pe-4 ps-2 d-flex flex-column justify-content-center custom-card-info-01">
+                          <h2 class="text-dark fw-semibold fs-3">Fundamental Of C/C++</h2>
+                          <p class="text-dark fw-light fs-5">Our New C/C++ Tutorial has arrived, here you will learn about full C/C++ language.</p>
+                          <span class="text-primary fs-4 fw-bold">Price : 49.99$</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="border rounded-3 overflow-hidden">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                          <img class="img-fluid w-100" src="images/course/course-3.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 p-0 pe-4 ps-2 d-flex flex-column justify-content-center custom-card-info-01">
+                          <h2 class="text-dark fw-semibold fs-3">Fundamental Of Web Design</h2>
+                          <p class="text-dark fw-light fs-5">Lean easiest way to learn web design from our webstie. This couse is on sale now.</p>
+                          <span class="text-primary fs-4 fw-bold">Price : 149.99$</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="border rounded-3 overflow-hidden">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                          <img class="img-fluid w-100" src="images/course/course-4.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 p-0 pe-4 ps-2 d-flex flex-column justify-content-center custom-card-info-01">
+                          <h2 class="text-dark fw-semibold fs-3">Fundamental Of APP Design</h2>
+                          <p class="text-dark fw-light fs-5">Learn Quickly Android Or Patti wala ios device App Design Using Flutter & Dart.</p>
+                          <span class="text-primary fs-4 fw-bold">Price : 199.99$</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="border rounded-3 overflow-hidden">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                          <img class="img-fluid w-100" src="images/course/course-5.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 p-0 pe-4 ps-2 d-flex flex-column justify-content-center custom-card-info-01">
+                          <h2 class="text-dark fw-semibold fs-3">Concept of Content Creating</h2>
+                          <p class="text-dark fw-light fs-5">Learn Effective steps to grow your content creating for youtube or facebook page.</p>
+                          <span class="text-primary fs-4 fw-bold">Price : 99.99$</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="border rounded-3 overflow-hidden">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                          <img class="img-fluid w-100" src="images/course/course-6.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 p-0 pe-4 ps-2 d-flex flex-column justify-content-center custom-card-info-01">
+                          <h2 class="text-dark fw-semibold fs-3">Motion Graphics Design</h2>
+                          <p class="text-dark fw-light fs-5">Learn Motion Graphics with our instructor Motion Mia, He is best.</p>
+                          <span class="text-primary fs-4 fw-bold">Price : 119.99$</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="d-block text-center py-4">
+              <a class="btn btn-primary text-light bg-primary fw-semibold fs-5" href="">See More Courses</a>
+          </div>
+      </div>
+  </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    </body>
+
+
